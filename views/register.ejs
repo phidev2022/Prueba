@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-registrar">
+        <h1>Formulario de registro</h1>
+        <form action="register" method="POST">
+            <label for="user">Nombre de Usuario</label>
+            <input type="text" name="user" id="user" required>
+
+            <label for="name">Nombre Completo</label>
+            <input type="text" name="name" required>
+
+            <label for="role">Rol</label>
+            <select name="role" id="role">
+                <option value="admin">Administrador</option>
+                <option value="data entry">Data Entry</option>
+            </select>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required>
+
+            <div style="display: inline;">
+                <a href="" class="btn-cancel">Cancel</a><input type="submit" value="Guardar">
+            </div>
+        </form>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

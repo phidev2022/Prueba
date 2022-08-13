@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <h1 class="navbar__title">Tiluchi <span class="title__span">market</span></h1>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="login__container">
+            <form action="auth" method="POST">
+                <label for="user">Usuario</label>
+                <input type="text" name="user" id="user" placeholder="Escriba su usuario" required>
+
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" placeholder="Escriba su contraseña" id="pass" required>
+
+                <input type="submit" value="Ingresar" class="form__submit">
+            </form>
+            <a href="register" class="btn-register">Registrarse</a>
+        </div>
+    </main>
+    <footer><h2>Derechos reservados</h2></footer>
+</body>
+</html>
